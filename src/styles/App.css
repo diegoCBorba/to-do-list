@@ -64,18 +64,15 @@ table{
 
 .tableRow{
   padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tableRow:hover{
   transition: 0.4s;
   background-color: #ddf3f076;
-}
-
-.tableRow tr{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .tableRow:not(:last-child) {
@@ -84,6 +81,14 @@ table{
 
 .tableCell{
   padding: 0px 10px;
+}
+
+.tableCell input[type=text]{
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid var(--verde1);
+  background-color: transparent;
+  font-size: 16px;
 }
 
 .partButton{
@@ -184,4 +189,22 @@ table{
 .buttonNew p{
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.buttonNew input[type=text]{
+  border:  none;
+  color: rgb(239, 239, 239);
+  border-bottom: 1px solid white;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.buttonNew input[type=text]:hover{
+  transition: 0.4s;
+  background-color: var(--verde3);
+}
+
+.buttonNew input[type=text]:active{
+  background-color: var(--verde2);
 }
